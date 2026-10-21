@@ -1,2 +1,398 @@
 <!DOCTYPE html>
-<html><button type="button"><h5>hello world</h5></button></html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="bootstrap5.js"></script>
+    <script src="jquery.js"></script>
+    <style>
+      .calculator {
+        width: 50%;
+        height: 80%;
+        margin-left: 20%;
+      }
+      .heading {
+        width: 30%;
+        margin-left: 33%;
+        margin-top: 2%;
+      }
+      #display {
+        font-size: 60px;
+      }
+      h1:hover {
+        color: black;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        var x;
+        x = $("#display").text();
+        $("#btn1").click(function () {
+          i = $("#btn1").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+
+        $("#btn2").click(function () {
+          i = $("#btn2").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+
+        $("#btn3").click(function () {
+          i = $("#btn3").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btn4").click(function () {
+          i = $("#btn4").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btn5").click(function () {
+          i = $("#btn5").val();
+          x = x + i;
+
+          $("#display").text(x);
+        });
+        $("#btn6").click(function () {
+          i = $("#btn6").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btn7").click(function () {
+          i = $("#btn7").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btn8").click(function () {
+          i = $("#btn8").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btn9").click(function () {
+          i = $("#btn9").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btn0").click(function () {
+          i = $("#btn0").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btn00").click(function () {
+          i = $("#btn00").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btndot").click(function () {
+          i = $("#btndot").val();
+          x = x + i;
+          $("#display").text(x);
+        });
+        $("#btnplus").click(function () {
+          y = $("#display").text();
+          x = "0";
+          $("#display").text(x);
+          x = $("#display").text();
+          $("#btnequal").click(function () {
+            z = parseFloat(y) + parseFloat(x);
+            $("#display").text(z);
+          });
+        });
+        $("#btnminus").click(function () {
+          y = $("#display").text();
+          x = "0";
+          $("#display").text(x);
+          x = $("#display").text();
+          $("#btnequal").click(function () {
+            z = parseFloat(y) - parseFloat(x);
+            $("#display").text(z);
+          });
+        });
+        $("#btndiv").click(function () {
+          y = $("#display").text();
+          x = "0";
+          $("#display").text(x);
+          x = $("#display").text();
+          $("#btnequal").click(function () {
+            z = parseFloat(y) / parseFloat(x);
+            $("#display").text(z);
+          });
+        });
+        $("#btnmul").click(function () {
+          y = $("#display").text();
+          x = "0";
+          $("#display").text(x);
+          x = $("#display").text();
+          $("#btnequal").click(function () {
+            z = parseFloat(y) * parseFloat(x);
+            $("#display").text(z);
+          });
+        });
+        $("#btnac").click(function () {
+          x = "0";
+          $("#display").text(x);
+        });
+        $("#btnc").click(function () {
+          $("#display").text(x);
+        });
+        $("#btnper").click(function () {
+          y = $("#display").text();
+          x = "0";
+          $("#display").text(x);
+          x = $("#display").text();
+          $("#btnequal").click(function () {
+            z = (parseFloat(y) / 100) * parseFloat(x);
+            $("#display").text(z);
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="calculator bg-secondary text-white">
+      <div class="heading text-center">
+        <h1>Calculator</h1>
+      </div>
+      <div class="container-fluid">
+        <p id="display">0</p>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-top: 30%">
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn1"
+              value="1"
+            >
+              <h1>1</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn2"
+              value="2"
+            >
+              <h1>2</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn3"
+              value="3"
+            >
+              <h1>3</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn4"
+              value="4"
+            >
+              <h1>4</h1>
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn5"
+              value="5"
+            >
+              <h1>5</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn6"
+              value="6"
+            >
+              <h1>6</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn7"
+              value="7"
+            >
+              <h1>7</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn8"
+              value="8"
+            >
+              <h1>8</h1>
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn9"
+              value="9"
+            >
+              <h1>9</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn0"
+              value="0"
+            >
+              <h1>0</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btn00"
+              value="00"
+            >
+              <h1>00</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btnplus"
+              value="+"
+            >
+              <h1>+</h1>
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btnminus"
+              value="-"
+            >
+              <h1>-</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btndiv"
+              value="/"
+            >
+              <h1>/</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btnper"
+              value="%"
+            >
+              <h1>%</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btnequal"
+              value="="
+            >
+              <h1>=</h1>
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btnac"
+              value=""
+            >
+              <h1>AC</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btnc"
+              value=""
+            >
+              <h1>C</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btnmul"
+              value="X"
+            >
+              <h1>X</h1>
+            </button>
+          </div>
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn btn-1 border border-2 bg-secondary text-white"
+              style="width: 100%"
+              id="btndot"
+              value="."
+            >
+              <h1>.</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
